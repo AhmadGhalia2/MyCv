@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.873e1e04.css",
-    "main.js": "/static/js/main.248dbf08.js",
+    "main.css": "/static/css/main.6596bcae.css",
+    "main.js": "/static/js/main.6f8ced17.js",
     "static/media/IMG_1977.MOV": "/static/media/IMG_1977.9eff00a1ca79d6e0eb65.MOV",
     "static/media/ved3.mp4": "/static/media/ved3.91015f903579039b9c99.mp4",
     "static/media/ved2.mp4": "/static/media/ved2.ffb49aecbb560219949f.mp4",
@@ -23,11 +23,11 @@
     "static/media/IMG_8938.JPG": "/static/media/IMG_8938.e572794139d04ed89ab9.JPG",
     "static/media/2019-12-30_01_lnu_image.jpg": "/static/media/2019-12-30_01_lnu_image.e7a753164aacee963e07.jpg",
     "index.html": "/index.html",
-    "main.873e1e04.css.map": "/static/css/main.873e1e04.css.map",
-    "main.248dbf08.js.map": "/static/js/main.248dbf08.js.map"
+    "main.6596bcae.css.map": "/static/css/main.6596bcae.css.map",
+    "main.6f8ced17.js.map": "/static/js/main.6f8ced17.js.map"
   },
   "entrypoints": [
-    "static/css/main.873e1e04.css",
-    "static/js/main.248dbf08.js"
+    "static/css/main.6596bcae.css",
+    "static/js/main.6f8ced17.js"
   ]
 }

@@ -1,38 +1,39 @@
 @media (max-width: 768px) {
   header {
-    height: 180px;
+    height: 290px;
   }
-.header-container {
-  width: 100%; /* Full width on small screens */
+  header .header-container {
+  width: 95%; /* Full width on small screens */
 }
 header .header-container .top-header .img-profile img {
   width: 100px;
   height: 100px;
 }
-header .header-container .top-header .tittle-text .name {
+header .header-container .top-header .tittle-text .tittle-name {
   letter-spacing: 2px;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 header .header-container .top-header .tittle-text .under-name {
   font-size: 12px;
   text-align: right;
 }
-header .header-container .top-header .tittle-text:hover .name {
+header .header-container .top-header .tittle-text:hover .tittle-name {
   font-size: 30px;
 
 }
+
 .navbar {
-  padding-top: 10px;
-  margin-top: 0px;
+  margin-top: 100px;
   height: auto;
+  width: 100%;
 
 }
 .navbar ul li {
-  margin: 0 6px;
+  margin-left: 1px;
 }
 .navbar ul li a {
-  font-weight: 800;
+  font-weight: 500;
   font-size: 12px;
 }
 
@@ -53,9 +54,11 @@ header .header-container .top-header .tittle-text:hover .name {
 @media (min-width: 768px) {
   header {
     height: 210px;
+ 
   }
   .header-container {
     width: 100%; /* Full width on small screens */
+  
   }
   header .header-container .top-header .img-profile img {
     width: 120px;

@@ -1,5 +1,5 @@
 import './header.css'
-import '../responsable.css'
+import './responsable.css'
 import Profile from './Profile'
 import Title from './Title';
 import Navbar from './Navbar';

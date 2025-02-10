@@ -101,7 +101,9 @@ h3,h2{
   .main-container .left-aside, .main-container .left-aside, .main-container {
     width: 100%; /* Set both sections to full width */
   }
-
+  .main-container .right-aside {
+    width: 100%;
+  }
   .main-container {
     flex-direction: column; /* Stacks elements vertically */
   }

@@ -1,5 +1,5 @@
 .contact-container {
-  width: 600px ;
+  width: 50% ;
   margin: 20px auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -86,3 +86,14 @@ textarea {
 .button:hover {
   background-color: #005f99;
 }
+
+
+
+@media (max-width: 768px) {
+
+  .contact-container {
+    width: 100% ;
+  }
+
+}
+

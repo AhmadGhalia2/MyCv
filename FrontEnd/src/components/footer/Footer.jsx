@@ -1,4 +1,5 @@
 import "./footer.css";
+import "./responsable.css";
 import FooterTop from "./FooterTop";
 import FooterMiddle from "./FooterMiddle";
 import FooterBottom from "./FooterBottom";

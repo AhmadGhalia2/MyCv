@@ -13,7 +13,7 @@ export default function LeftAside() {
           </p>
         </div>
 
-        <h3>{language === "sv" ? "Personlig Bakgrund test" : "Personal Background"}</h3>
+        <h3>{language === "sv" ? "Personlig Bakgrund" : "Personal Background"}</h3>
         <hr />
         <p>
           {language === "sv"

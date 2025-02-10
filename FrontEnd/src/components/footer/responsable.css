@@ -1,0 +1,45 @@
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer .footer-container .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-container .footer-middle {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer .footer-container .footer-middle .col {
+    text-align: center;
+  }
+  .footer .footer-container .footer-middle .col ul {
+    border-bottom: 2px solid black;
+    border-top: 0px;
+
+  }
+
+  .footer .footer-container .footer-top .left h1 {
+    font-size: 24px; /* Smaller heading for mobile */
+  }
+
+  .footer .footer-container .footer-top .right .icons box-icon {
+    width: 50px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer .footer-container {
+    width: 95%;
+  }
+
+  .footer .footer-container .footer-top .left h1 {
+    font-size: 20px;
+  }
+
+  .footer .footer-bottom {
+    font-size: 10px;
+  }
+}
