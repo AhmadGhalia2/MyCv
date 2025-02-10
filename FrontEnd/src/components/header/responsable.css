@@ -18,10 +18,7 @@ header .header-container .top-header .tittle-text .under-name {
   font-size: 12px;
   text-align: right;
 }
-header .header-container .top-header .tittle-text:hover .tittle-name {
-  font-size: 30px;
 
-}
 
 .navbar {
   margin-top: 100px;
@@ -33,7 +30,7 @@ header .header-container .top-header .tittle-text:hover .tittle-name {
   margin-left: 1px;
 }
 .navbar ul li a {
-  font-weight: 500;
+  font-weight: bold;
   font-size: 12px;
 }
 
