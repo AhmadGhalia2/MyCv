@@ -48,6 +48,15 @@ header .header-container .top-header .tittle-text:hover .tittle-name {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.language-switch {
+  font-size: 16px;
+  background-color:rgb(76, 164, 101);
+  cursor: pointer;
+  color: black;
+  width: 140px;
+  border-radius: 30px;
+}
 }
 
 /* Medium screens (tablets and small laptops) */
