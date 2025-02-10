@@ -1,0 +1,118 @@
+header {
+  width: 100%;
+  background-image: url("../img/2019-12-30_01_lnu_image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  /* height: 300px; */
+}
+
+header .header-container {
+  margin: 0 auto;
+  padding-top: 10px;
+  /* border: 2px solid black; */
+  height: 100%;
+  width: 80%;
+}
+
+header .header-container .top-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  /* border: 2px solid black; */
+}
+
+header .header-container .top-header .img-profile img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  transition: 0.3s;
+}
+
+header .header-container .top-header .img-profile img:hover {
+  transform: scale(1.1);
+}
+
+header .header-container .top-header .tittle-text {
+  text-align: center;
+ 
+}
+
+
+header .header-container .top-header .tittle-text .tittle-name {
+  text-shadow: 2px 3px gold;
+  font-family: monospace;
+  letter-spacing: 3px;
+  font-size: 44px;
+  transition: font-size 0.5s ease;
+  color: black;
+
+  
+}
+
+header .header-container .top-header .tittle-text .under-name {
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 22px;
+  margin-top: 10px;
+  text-align: right;
+  color: black;
+  text-shadow: 1px 1px gold;
+  /* border: 2px solid black; */
+  /* transition: transform 0.5s ease; */
+}
+
+
+
+/* Navbar Styling */
+.navbar {
+  /* padding: 10px; */
+  padding-top: 30px;
+  border-radius: 5px;
+  height: auto;
+  margin-top: 65px;
+  /* display: none; */
+
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: gold;
+  font-size: 35px;
+}
+
+
+.language-switch {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+  width: 290px;
+}
+
+.language-switch:hover {
+  text-decoration: none;
+}

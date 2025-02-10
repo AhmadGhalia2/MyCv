@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+main {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #DFDDE0;
+  padding: 10px;
+}
+
+body {
+  background-color: #DFDDE0;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+}
+
+/* Medium screens (tablets and small laptops) */
+@media (min-width: 768px) {
+  main {
+    width: 100%;
+  }
+
+
+}
+
+/* Large screens (desktops) */
+@media (min-width: 992px) {
+  main {
+    width: 90%;
+  }
+
+}
+
+/* Extra-large screens (large desktops) */
+@media (min-width: 1200px) {
+  main {
+    width: 80%;
+    /* Further reduced width on very large screens */
+  }
+}

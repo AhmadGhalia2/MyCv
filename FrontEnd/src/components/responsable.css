@@ -1,0 +1,150 @@
+@media (max-width: 768px) {
+  header {
+    height: 180px;
+  }
+.header-container {
+  width: 100%; /* Full width on small screens */
+}
+header .header-container .top-header .img-profile img {
+  width: 100px;
+  height: 100px;
+}
+header .header-container .top-header .tittle-text .name {
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+
+header .header-container .top-header .tittle-text .under-name {
+  font-size: 12px;
+  text-align: right;
+}
+header .header-container .top-header .tittle-text:hover .name {
+  font-size: 30px;
+
+}
+.navbar {
+  padding-top: 10px;
+  margin-top: 0px;
+  height: auto;
+
+}
+.navbar ul li {
+  margin: 0 6px;
+}
+.navbar ul li a {
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.navbar ul li a:hover {
+  color: gold;
+  font-size: 18px;
+}
+/* Footer */
+.footer .footer-container .footer-top .right .icons box-icon {
+  width: 30px; /* Smaller size for mobile */
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+}
+
+/* Medium screens (tablets and small laptops) */
+@media (min-width: 768px) {
+  header {
+    height: 210px;
+  }
+  .header-container {
+    width: 100%; /* Full width on small screens */
+  }
+  header .header-container .top-header .img-profile img {
+    width: 120px;
+    height: 120px;
+  }
+  header .header-container .top-header .tittle-text .name {
+    font-size: 35px;
+  }
+  
+  header .header-container .top-header .tittle-text .under-name {
+    font-size: 18px;
+  }
+  header .header-container .top-header .tittle-text:hover .name {
+    font-size: 40px;
+  
+  }
+  .navbar {
+    padding-top: 10px;
+    margin-top: 20px;
+    /* display: none; */
+  
+  }
+  .navbar ul li {
+    margin: 0 12px;
+  }
+  .navbar ul li a {
+    font-weight: 800;
+    font-size: 18px;
+  }
+  
+  .navbar ul li a:hover {
+    color: gold;
+    font-size: 24px;
+  }
+
+}
+
+/* Large screens (desktops) */
+@media (min-width: 992px) {
+  header {
+    height: 250px;
+  }
+  .container {
+    width: 90%; /* Full width on small screens */
+  }
+  header .container .top-header .img-profile img {
+    width: 140px;
+    height: 140px;
+  }
+  header .container .top-header .tittle-text .name {
+    letter-spacing: 3px;
+    font-size: 34px;
+  }
+  
+  header .container .top-header .tittle-text .under-name {
+    font-size: 18px;
+  }
+  header .container .top-header .tittle-text:hover .name {
+    font-size: 40px;
+  
+  }
+  .navbar {
+    height: auto;
+    /* display: none; */
+    padding-top: 25px;
+    margin-top: 20px;
+  
+  }
+  .navbar ul li {
+    margin: 0 16px;
+  }
+  .navbar ul li a {
+    font-weight: 800;
+    font-size: 20px;
+  }
+  
+  .navbar ul li a:hover {
+    font-size: 30px;
+  }
+}
+
+/* Extra-large screens (large desktops) */
+@media (min-width: 1200px) {
+  .container {
+    width: 80%; /* Further reduced width on very large screens */
+  }
+}
+
+
+
+
+

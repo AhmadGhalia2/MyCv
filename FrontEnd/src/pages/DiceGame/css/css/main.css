@@ -1,0 +1,24 @@
+.main {
+  width: 100%;
+}
+
+.main .main-content {
+  width: 80%;
+  margin: 0 auto;
+  /* border: 2px solid black; */
+  padding: 10px;
+  padding-top: 30px;
+}
+.main .main-content .galleries {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.main .main-content .galleries .gallery{
+  width: calc(96%/2);
+}
+.main .main-content .galleries .gallery img{
+width: 160px;
+height: 160px;
+}

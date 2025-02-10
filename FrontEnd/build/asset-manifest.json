@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.873e1e04.css",
+    "main.js": "/static/js/main.6f8ced17.js",
+    "static/media/IMG_1977.MOV": "/static/media/IMG_1977.9eff00a1ca79d6e0eb65.MOV",
+    "static/media/ved3.mp4": "/static/media/ved3.91015f903579039b9c99.mp4",
+    "static/media/ved2.mp4": "/static/media/ved2.ffb49aecbb560219949f.mp4",
+    "static/media/IMG_1979.MOV": "/static/media/IMG_1979.021f485e10fc679a40e6.MOV",
+    "static/media/ved1.mp4": "/static/media/ved1.2f00ffe0792476e006c6.mp4",
+    "static/media/68CF6135-C8C2-443F-BDC4-BC1819091F79.mp4": "/static/media/68CF6135-C8C2-443F-BDC4-BC1819091F79.573b93863581a17f8e0b.mp4",
+    "static/media/C084422A-C7F5-4EB5-BF78-6A63D743612F.mp4": "/static/media/C084422A-C7F5-4EB5-BF78-6A63D743612F.641b84358471cb6746e8.mp4",
+    "static/media/recorded-2086419032739.mp4": "/static/media/recorded-2086419032739.087c1378be21579a7f7d.mp4",
+    "static/media/37A62978-C34B-442F-A0C2-28E901339557.mp4": "/static/media/37A62978-C34B-442F-A0C2-28E901339557.e8644cdfb660d7c4ed33.mp4",
+    "static/media/realTime.jpeg": "/static/media/realTime.333e41954cac9415e46e.jpeg",
+    "static/media/img3.jpeg": "/static/media/img3.67c178a577a80ad41c82.jpeg",
+    "static/media/img2.jpeg": "/static/media/img2.dc00ba60af13dc757af8.jpeg",
+    "static/media/zumoRobot2.jpeg": "/static/media/zumoRobot2.7eac9b077e53c4032e9b.jpeg",
+    "static/media/img1.jpeg": "/static/media/img1.0956b7133165d30fe0b3.jpeg",
+    "static/media/busBording.jpeg": "/static/media/busBording.44a9f3d295e98907a9de.jpeg",
+    "static/media/IMG_8723.jpeg": "/static/media/IMG_8723.b732a014c3c06b912113.jpeg",
+    "static/media/zumoRobot.jpeg": "/static/media/zumoRobot.562fa63dcc8ea4f1acc5.jpeg",
+    "static/media/busBording2.JPG": "/static/media/busBording2.7e070bee434ff390539b.JPG",
+    "static/media/IMG_8938.JPG": "/static/media/IMG_8938.e572794139d04ed89ab9.JPG",
+    "static/media/2019-12-30_01_lnu_image.jpg": "/static/media/2019-12-30_01_lnu_image.e7a753164aacee963e07.jpg",
+    "index.html": "/index.html",
+    "main.873e1e04.css.map": "/static/css/main.873e1e04.css.map",
+    "main.6f8ced17.js.map": "/static/js/main.6f8ced17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.873e1e04.css",
+    "static/js/main.6f8ced17.js"
+  ]
+}

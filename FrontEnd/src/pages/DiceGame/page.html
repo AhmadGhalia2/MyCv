@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/css/header.css">
+  <link rel="stylesheet" href="css/css/main-style.css">
+  <link rel="stylesheet" href="css/css/main.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Stare Header Section -->
+  <div class="main-content ">
+    <h1>Dice game 21</h1>
+    <p>Play a game of 21 using dices. You start roll and try to get to 21 but not over, then it is the computer turn.
+      Computer wins on equal and will roll up to 18 and then stop.</p>
+    <button id="start">Start/restart game</button>
+    <div id="player-area" class="hidden">
+      <h1>Player <span class="hidden" id="player_winner">Winner</span></h1>
+      <button id="roll">Roll</button>
+      <button id="stop">Stop</button>
+      <p>
+        <span id="player-sum"></span>
+        <span id="player-rolls" class="dice"></span>
+      </p>
+    </div>
+    <!-- Computer Area -->
+    <div id="computer-area" class="hidden">
+      <h1>Computer <span class="hidden" id="computer_winner">Winner</span> </h1>
+      <button id="computer-roll">Let me roll the dices...</button>
+      <p>
+        <span id="computer-sum"></span>
+        <span id="computer-rolls" class="dice"></span>
+      </p>
+    </div>
+  </div>
+</body>
+<script type="module" src="js/main.js"></script>
+
+</html>

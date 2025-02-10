@@ -1,0 +1,109 @@
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+.main-container .left-aside {
+  color: white;
+  width: 30%;
+  height: 100% auto;
+  padding: 15px;
+  background-color: #373737db;
+  border-radius: 10px;
+  
+}
+.main-container .left-aside .tittle .name{
+  font-size: 28px;
+  color: #beb9b9;
+}
+.main-container .left-aside .tittle .under-name{
+  font-size: 15px;
+  color: #beb9b9;
+}
+.main-container .right-aside {
+  width: 70%;
+  height: 100% auto;
+  padding: 15px;
+  background-color: #DFDDE0;
+}
+
+
+.main-container .right-aside h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-container .right-aside .education-entry {
+  background-color: #E6E5E8;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.main-container .right-aside  .education-entry p {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+em {
+  font-style: italic;
+  color: #666;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skill {
+  background-color: #E6E5E8;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.skill p {
+  margin: 5px 0;
+  line-height: 1.5;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+ul {
+  list-style-position: inside; /* Optional: keeps bullets within the div */
+}
+ul li {
+  text-indent: -20px; /* Indents first line to align with following lines */
+  padding-left: 20px; /* Adjust to create enough space for bullets */
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+h3,h2{
+  padding-bottom: 3px;
+  padding-top: 10px;
+}
+/* Media query to adjust layout on smaller screens */
+
+@media (max-width: 768px) {
+  .main-container .left-aside, .main-container .left-aside, .main-container {
+    width: 100%; /* Set both sections to full width */
+  }
+
+  .main-container {
+    flex-direction: column; /* Stacks elements vertically */
+  }
+}
+

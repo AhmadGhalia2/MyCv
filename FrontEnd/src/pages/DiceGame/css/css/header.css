@@ -1,0 +1,86 @@
+.header {
+  width: 100%;
+  background-image: url("../../img/2019-12-30_01_lnu_image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.header .header-container {
+  width: 80%;
+  /* border: 2px solid black; */
+  margin: 0 auto;
+}
+
+.header .header-container .header-content {
+  display: flex;
+  /* gap: 385px; */
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+.header .header-container .header-content .profile img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.header .header-container .header-content .tittle {
+  text-align: center;
+  /* border: 2px solid black; */
+}
+
+.header .header-container .header-content .tittle-text .name {
+  text-shadow: 2px 3px gold;
+  font-family: monospace;
+  letter-spacing: 4px;
+  font-size: 38px;
+}
+
+.header .header-container .header-content .tittle-text .under-name {
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: right;
+  color: black;
+  text-shadow: 1px 1px gold;
+}
+
+/* Navbar Styling */
+.navbar {
+  padding: 15px;
+  padding-top: 30px;
+  border-radius: 5px;
+  /* border: 2px solid black; */
+  height: 80px;
+
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+}
+
+.navbar ul li {
+  margin: 0 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: gold;
+  font-size: 35px;
+}
