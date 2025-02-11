@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.mjs",
+     "build": "echo 'Build complete'",
     "dev": "nodemon server.mjs"
   },
   "author": "Your Name",
