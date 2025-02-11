@@ -2,7 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import formInfo from './modules/formInfo.mjs';
 import cors from 'cors';
-import dotenv from 'dotenv';  
+import dotenv from 'dotenv';
 
 dotenv.config(); // Load environment variables
 
@@ -23,6 +23,9 @@ mongoose.connection.once('open', () => {
   console.log('✅ Database connection established');
 });
 
+app.get('/', async (req, res) => {
+  res.send('Hello from te production server')
+})
 // POST route to save form data
 app.post('/sendFormInfo', async (req, res) => {
   const { name, email, message } = req.body;
