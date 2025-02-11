@@ -3,7 +3,6 @@ import { useState } from 'react';
 // import Footer from '../../components/Footer';
 import Submitted from './Submitted';
 import './contact.css';
-
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [status, setStatus] = useState('')
@@ -25,7 +24,7 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3001/sendFormInfo', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/sendFormInfo`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
