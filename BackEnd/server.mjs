@@ -49,9 +49,9 @@ app.post('/sendFormInfo', async (req, res) => {
 });
 
 
-
-app.listen(3001, () => {
-  console.log('The server is running on port 3001');
+const port= process.env.PORT
+app.listen(port, () => {
+  console.log(`The server is running on port ${port}`);
 });
 
 
