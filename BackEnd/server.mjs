@@ -2,11 +2,14 @@ import express from 'express';
 import mongoose from 'mongoose'
 import formInfo from './modules/formInfo.mjs'
 import cors from 'cors';
+import dotenv from 'dotenv';  
+dotenv.config();
 const app = express();
 app.use(cors()); // Allow all origins (or configure specific origins if needed)
 app.use(express.json()); // Middleware to parse JSON bodies
 
-mongoose.connect('mongodb+srv://ag223pt:0962557173ag@cluster0.3daysor.mongodb.net/myDatabase')
+
+mongoose.connect(process.env.CONNECTING_STRING)
   .then(() => {
     console.log('Connected to database');
   })
@@ -20,14 +23,6 @@ mongoose.connection.once('open', () => {
 });
 
 
-// mongoose.connect('mongodb+srv://ag223pt:0962557173ag@cluster0.3daysor.mongodb.net/').then(() => {
-//   console.log('connected to database')
-// })
-
-// mongoose.connect('mongodb+srv://ahmadghalia:0962557173ag@cv.i0o4u.mongodb.net/test').then(() => {
-  
-//   console.log('connected to database')
-// })
 
 
 app.post('/sendFormInfo', async (req, res) => {
