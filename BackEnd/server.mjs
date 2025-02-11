@@ -1,75 +1,48 @@
 import express from 'express';
-import mongoose from 'mongoose'
-import formInfo from './modules/formInfo.mjs'
+import mongoose from 'mongoose';
+import formInfo from './modules/formInfo.mjs';
 import cors from 'cors';
 import dotenv from 'dotenv';  
-dotenv.config();
+
+dotenv.config(); // Load environment variables
+
 const app = express();
-app.use(cors()); // Allow all origins (or configure specific origins if needed)
-app.use(express.json()); // Middleware to parse JSON bodies
+app.use(cors()); // Enable CORS for cross-origin requests
+app.use(express.json()); // Parse JSON request bodies
 
+const PORT = process.env.PORT || 5000; // Default to port 5000 if undefined
+const DB_URI = process.env.CONNECTING_STRING;
 
-mongoose.connect(process.env.CONNECTING_STRING)
-  .then(() => {
-    console.log('Connected to database');
-  })
-  .catch((error) => {
-    console.error('Error connecting to database:', error);
-  });
+// Connect to MongoDB
+mongoose.connect(DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('✅ Connected to MongoDB'))
+  .catch((error) => console.error('❌ Database connection error:', error));
 
-
+// Log when MongoDB is connected
 mongoose.connection.once('open', () => {
-  console.log('Database connection established');
+  console.log('✅ Database connection established');
 });
 
-
-
-
+// POST route to save form data
 app.post('/sendFormInfo', async (req, res) => {
   const { name, email, message } = req.body;
 
-  console.log(`Received data: Name: ${name}, Email: ${email}, Message: ${message}`);
+  console.log(`📩 Received: Name: ${name}, Email: ${email}, Message: ${message}`);
 
-  // Create a new instance of the formInfo model
-  const newForm = new formInfo({
-    name: name,
-    email: email,
-    message: message,
-  });
+  // Create new form entry
+  const newForm = new formInfo({ name, email, message });
 
   try {
-    // Save the new form data to the database
     await newForm.save();
-    console.log('Saved to database');
+    console.log('✅ Saved to database');
     res.status(200).json({ message: 'Form data saved successfully!' });
   } catch (error) {
-    console.error('Error saving to database:', error);
+    console.error('❌ Error saving data:', error);
     res.status(500).json({ message: 'Error saving form data.' });
   }
 });
 
-
-const port= process.env.PORT
-app.listen(port, () => {
-  console.log(`The server is running on port ${port}`);
+// Start the server
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
 });
-
-
-// app.get('/user', (req, res) => {
-//   newUser.name = 'John Doe'
-//   newUser.email = 'ahmad@gmail.com'
-//   newUser.age = 29
-//   newUser.save()
-//   res.send('good')
-// })
-
-// app.get('/getUser', async (req, res) => {
-//   const u = await User.find()
-// res.json(u) 
-// })
-
-// app.get('/getUserById/:id', async (req, res) => {
-//   const id = req.params.id
-//   const u = await User.findById(id)
-// res.json(u)
-// })
